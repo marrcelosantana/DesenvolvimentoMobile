@@ -19,6 +19,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
+import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,6 +80,26 @@ public class MainActivity extends AppCompatActivity {
         radioGroup = findViewById(R.id.radioGroup);
 
         executarSom();
+
+        //Init LongPress
+        TextView txtView = (TextView) findViewById(R.id.textView3);
+        txtView.setOnLongClickListener(new OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                // TODO Auto-generated method stub
+                Toast.makeText(getApplicationContext(),
+                        "Você apertou por um longo tempo!! :)", 2000).show();
+                return true;
+            }
+        });
+        txtView.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Toast.makeText(getApplicationContext(), "Você não pressionou tempo suficiente :(",
+                        1000).show();
+            }
+        });
     }
 
     @Override
@@ -129,8 +151,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
         popup.show();
     }
-
 }

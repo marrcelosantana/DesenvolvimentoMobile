@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Trabalho01</string>
+    <string-array name="sports_array">
+        <item>Futebol</item>
+        <item>Vôlei</item>
+        <item>Basquete</item>
+        <item>Natação</item>
+    </string-array>
 </resources>
