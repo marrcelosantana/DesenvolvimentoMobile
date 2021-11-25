@@ -1,4 +1,4 @@
-package com.example.atv02;
+package com.example.trabalho02;
 
 import org.junit.Test;
 

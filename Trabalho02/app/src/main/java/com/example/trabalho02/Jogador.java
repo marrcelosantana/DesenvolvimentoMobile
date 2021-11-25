@@ -1,4 +1,4 @@
-package com.example.atv02;
+package com.example.trabalho02;
 
 import java.io.Serializable;
 
@@ -39,10 +39,9 @@ public class Jogador implements Serializable {
 
     @Override
     public String toString() {
-        return "Jogador{" +
-                "nome='" + nome + '\'' +
+        return "{Jogador = " + nome + '\'' +
                 ", clube='" + clube + '\'' +
                 ", nacionalidade='" + nacionalidade + '\'' +
-                '}';
+                '}' + '\n';
     }
 }
