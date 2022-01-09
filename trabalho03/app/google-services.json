@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "55056553675",
+    "firebase_url": "https://trabalho03mobile-ba49d-default-rtdb.firebaseio.com",
+    "project_id": "trabalho03mobile-ba49d",
+    "storage_bucket": "trabalho03mobile-ba49d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55056553675:android:a96c38bf62e871779eed4e",
+        "android_client_info": {
+          "package_name": "com.example.trabalho03"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55056553675-nbj92g34f4c4ceb5hh2p3fb3346jhsjj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trabalho03",
+            "certificate_hash": "9566783d3bc1c7651b08e6595a2bfd9057e01cda"
+          }
+        },
+        {
+          "client_id": "55056553675-1vr35qhvg19tstpv0fv452ffssbp0goq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHHSbY8tA6ncqV8AvCAzP6IfTTo0vIWkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55056553675-1vr35qhvg19tstpv0fv452ffssbp0goq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
