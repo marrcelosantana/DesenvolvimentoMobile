@@ -53,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void iniciarFirebase() {
+        FirebaseApp.initializeApp(MainActivity.this);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseDatabase.setPersistenceEnabled(true);
+        databaseReference = firebaseDatabase.getReference();
+    }
+
     private void eventoDatabase(){ //Função para listar jogadores na tela.
         databaseReference.child("Jogador").addValueEventListener(new ValueEventListener(){
             @Override
@@ -68,16 +75,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError){
-
+                System.out.println(databaseError);
             }
         });
-    }
-
-    private void iniciarFirebase() {
-        FirebaseApp.initializeApp(MainActivity.this);
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        firebaseDatabase.setPersistenceEnabled(true);
-        databaseReference = firebaseDatabase.getReference();
     }
 
     @Override
